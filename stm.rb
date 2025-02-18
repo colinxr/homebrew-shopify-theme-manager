@@ -5,23 +5,23 @@
 class Stm < Formula
   desc "Shopify Theme Manager CLI"
   homepage "https://github.com/colinxr/shopify-theme-manager"
-  version "0.0.7-h"
+  version "0.0.7-i"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-h/shopify-theme-manager_Darwin_x86_64.tar.gz"
-      sha256 "31571585d194255f93f9a06be3fd96c710a082a9781507e6eb2da8934d9ca084"
+      url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-i/shopify-theme-manager_Darwin_x86_64.tar.gz"
+      sha256 "0a74b48ebe89c9f4c3422c7583ca0e85b773aa08792e664e9ccff37d745ebf69"
 
       def install
-        bin.install "stm"
+        bin.install "shopify-theme-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-h/shopify-theme-manager_Darwin_arm64.tar.gz"
-      sha256 "83a3b2f54c8134f91eae6f43bfbb0cec148f0726041873f5fe5b189dcb819b09"
+      url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-i/shopify-theme-manager_Darwin_arm64.tar.gz"
+      sha256 "d3d0737c9e60418aba5a45eae46e10171a1dfb9943f34593a337e78bb78a3a56"
 
       def install
-        bin.install "stm"
+        bin.install "shopify-theme-manager"
       end
     end
   end
@@ -29,21 +29,21 @@ class Stm < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-h/shopify-theme-manager_Linux_x86_64.tar.gz"
-        sha256 "4ed354f9534dc1a206bc227be98ff185513c121b76c525748868a7360b95fc70"
+        url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-i/shopify-theme-manager_Linux_x86_64.tar.gz"
+        sha256 "d7c77f1c017d5f1c7b3d7bcf15e5407948f0f655dae83dd759010ffe3b9086e0"
 
         def install
-          bin.install "stm"
+          bin.install "shopify-theme-manager"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-h/shopify-theme-manager_Linux_arm64.tar.gz"
-        sha256 "f5ece73b523611ca618964737e79e47e520bb01a4f2e7520e41b025d113c62bc"
+        url "https://github.com/colinxr/shopify-theme-manager/releases/download/v0.0.7-i/shopify-theme-manager_Linux_arm64.tar.gz"
+        sha256 "683754c12515b35508ecbc3a63fbf2a9c42613f4c67c20dc7b488642334a43ea"
 
         def install
-          bin.install "stm"
+          bin.install "shopify-theme-manager"
         end
       end
     end
