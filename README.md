@@ -1,1 +1,1 @@
-# homebrew-tap
+# homebrew-shopify-theme-manager
